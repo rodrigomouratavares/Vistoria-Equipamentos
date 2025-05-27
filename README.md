@@ -1,0 +1,2 @@
+# Vistoria-Equipamentos
+Projeto DNC

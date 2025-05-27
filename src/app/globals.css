@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  
+}
+
+@theme inline {
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+}
+html, body {
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 100%;
+  color: black;
+}
+
+.page {
+  width: 795px;
+  height: 1122px;
+  margin: 0 !important;
+  padding:10px !important;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.page-break {
+  page-break-after: never;
+  padding:10px !important;
+}
+
+#relatorio {
+  width: 794px;              
+  padding: 0;
+  background-color: white;
+  margin: 0 auto;
+}
+
+
+.no-break {
+  page-break-inside: avoid;
+}
+
+@media print {
+  .pagina {
+    page-break-after: always;
+  }
+
+  .page-break {
+    page-break-after: always;
+
+  }
+
+  /* Remover margem/padding que pode causar espaços extras */
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+}
